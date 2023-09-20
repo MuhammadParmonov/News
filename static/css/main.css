@@ -1,0 +1,9 @@
+.img-td{
+    width: 150px;
+    height: 100px;
+}
+.img-td img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

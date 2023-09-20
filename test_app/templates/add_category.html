@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <form action="" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{form.as_p}}
+                  <div class="mt-3">
+                    <input type="submit" value="Save" class="btn btn-success">
+                    <input type="reset" value="Clear" class="btn btn-danger">
+                    <a href="{% url 'home-page' %}" class="btn btn-primary">Home</a>
+                  </div>
+            </form>
+        </div>
+    </div>
+</div> 
+{% endblock main %}

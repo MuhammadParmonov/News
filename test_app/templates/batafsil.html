@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+{% block main %}
+<div class="container">
+    <div class="card mb-3">
+        <img src="{{ yangilik.image.url }}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{yangilik.nomi}}</h5>
+          <p class="card-text">{{yangilik.mazmuni}}</p>
+          <a href="{% url 'home-page' %}" class="btn btn-primary mb-2">Orqaga</a>
+          <p class="card-text"><small class="text-body-secondary"><i class="fa-regular fa-eye"></i> {{yangilik.koriwlar_soni}}</small></p>
+        </div>
+      </div>
+</div>
+{% endblock main %}
